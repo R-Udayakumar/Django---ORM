@@ -9,21 +9,41 @@ Include your ER diagram here
 
 ## DESIGN STEPS
 
-### STEP 1:
+## STEP 1:
+Creating a table using required details in Django--ORM
 
-### STEP 2:
+## STEP 2:
+Upload the python code.
 
-### STEP 3:
-
-Write your own steps
-
+## STEP 3:
+Push the code to github
 ## PROGRAM
+## Models.py
+```html
+from django.db import models
+from django.contrib import admin
+# Create your models here.
 
-Include your code here
+class student(models.Model):
+    reference_no=models.CharField(max_length=75,help_text='Reference_No.')
+    name=models.CharField(max_length=100,help_text='Name')
+    email=models.EmailField(help_text='Email')
+    age=models.IntegerField(help_text='Age')
+    Class=models.IntegerField(help_text='Class')
+class studentAdmin(admin.ModelAdmin):
+    list_display=('reference_no','name','Class','age','email')
+```
+## Admin.py
+```html
+from django.contrib import admin
+from .models import student,studentAdmin
 
+# Register your models here.
+admin.site.register(student,studentAdmin)
+```
 ## OUTPUT
 
-Include the screenshot of your admin page.
 
 
 ## RESULT
+Thus, the Program is executed successfully.
