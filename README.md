@@ -42,7 +42,7 @@ from .models import student,studentAdmin
 admin.site.register(student,studentAdmin)
 ```
 ## OUTPUT
-
+![Screenshot_20230128_075232](https://user-images.githubusercontent.com/118708024/215237422-d82e81d8-56c6-43a0-b6c8-4285b40f3326.png)
 
 
 ## RESULT
