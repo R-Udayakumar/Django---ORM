@@ -42,8 +42,6 @@ from .models import student,studentAdmin
 admin.site.register(student,studentAdmin)
 ```
 ## OUTPUT
-![Screenshot_20230128_075232](https://user-images.githubusercontent.com/118708024/215237422-d82e81d8-56c6-43a0-b6c8-4285b40f3326.png)
-
-
+![image](https://user-images.githubusercontent.com/118708024/215467492-69f0e7fa-b3f5-4658-9c65-86c68f048230.png)
 ## RESULT
 Thus, the Program is executed successfully.
